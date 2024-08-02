@@ -13,4 +13,10 @@
 3. After successful installation of packages, run the command `npm start`.
 4. Once the server starts, it will open in  browser at the URL: [http://localhost:3000](http://localhost:3000).
 
+## Project Feature
+
+1. Paginated customer list on left.
+2. Images change after every 10 seconds for a specific customer.
+3. On selecting new user, image refetched for new set of images.
+
 

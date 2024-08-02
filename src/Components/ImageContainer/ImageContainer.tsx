@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import "./image-container.css";
 import Spinner from "../Spinner/Spinner";
+interface dataItem {
+  data: any;
+}
 
-const ImageConatiner: React.FC = () => {
+const ImageConatiner: React.FC<dataItem> = ({ data }) => {
   const [images, setImages] = useState<string[]>([]);
   const [error, setError] = useState<string>("");
   const fetchImages = async () => {
@@ -28,6 +31,10 @@ const ImageConatiner: React.FC = () => {
 
     return () => clearInterval(interval);
   }, []);
+  useEffect(() => {
+    setImages([]);
+    fetchImages();
+  }, [data]);
   if (images.length === 0) {
     return (
       <div className="flex-center">

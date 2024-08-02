@@ -18,9 +18,10 @@
 .right-container {
   width:100%;
   background-color: #f5f8fd;
-  height: auto;
+  height: max-content;
   padding: 20px;
   margin-left: 300px;
+  min-height: 80vh;
 }
 .user {
   height: auto;
@@ -64,6 +65,7 @@
 .user-description {
   text-align: center;
   color: gray;
+  margin-bottom: 20px;
 }
 .image-wrapper {
   display: flex;

@@ -10,7 +10,7 @@ const UserDetails: React.FC<userPreviewProps> = ({ data }) => {
       <div className="user-heading">{data?.name} details here</div>
       <div className="user-description">{data?.description}</div>
       <div className="image-wrapper">
-        <ImageConatiner />
+        <ImageConatiner data={data?.id}/>
       </div>
     </div>
   );
