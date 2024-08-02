@@ -1,0 +1,80 @@
+.main-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.left-container {
+  width: 20%;
+  height: 80vh;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 300px;
+}
+.right-container {
+  width: 80%;
+  background-color: #f5f8fd;
+  height: auto;
+  padding: 20px;
+  margin-left: 280px;
+}
+.user {
+  height: auto;
+  overflow: hidden;
+}
+.short-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.user .user-name {
+  font-weight: 550;
+}
+
+.card {
+  padding: 10px;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: lightgray;
+}
+.active-card {
+  background-color: lightgray;
+}
+.user-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+.user-heading {
+  font-size: 30px;
+  font-weight: 550;
+  margin: 20px;
+}
+.user-description {
+  text-align: center;
+  color: gray;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.load-btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: aquamarine;
+  border-radius: 20px;
+  margin-top: 10px;
+}
