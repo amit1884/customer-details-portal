@@ -28,21 +28,28 @@ const ImageConatiner: React.FC = () => {
 
     return () => clearInterval(interval);
   }, []);
-  return (
-    <div className="photos-container">
-      {images?.length > 0 &&
-        images.map((url, idx) => (
-          <div className="thumbnail" key={idx}>
-            <img src={url} alt={` ${idx + 1}`} />
+  if (images.length === 0) {
+    return (
+      <div className="flex-center">
+        <Spinner />
+      </div>
+    );
+  } else
+    return (
+      <div className="photos-container">
+        {images?.length > 0 &&
+          images.map((url, idx) => (
+            <div className="thumbnail" key={idx}>
+              <img src={url} alt={` ${idx + 1}`} />
+            </div>
+          ))}
+        {error && (
+          <div className="flex-center">
+            <p className="error-txt">{error}</p>
           </div>
-        ))}
-      {error && (
-        <div className="flex-center">
-          <p className="error-txt">{error}</p>
-        </div>
-      )}
-    </div>
-  );
+        )}
+      </div>
+    );
 };
 
 export default ImageConatiner;
