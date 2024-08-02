@@ -19,3 +19,24 @@
   justify-content: center;
   align-items: center;
 }
+::-webkit-scrollbar {
+  width: 5px; 
+  height: 10px; 
+}
+
+/* Style the part of the scrollbar that is draggable */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 6px;
+}
+
+/* Style the scrollbar track (part of the scrollbar not filled with content) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px; 
+}
+
+/* Style the scrollbar corner (where horizontal and vertical scrollbars meet) */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}

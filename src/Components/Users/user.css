@@ -16,11 +16,11 @@
   width: 300px;
 }
 .right-container {
-  width: 80%;
+  width:100%;
   background-color: #f5f8fd;
   height: auto;
   padding: 20px;
-  margin-left: 280px;
+  margin-left: 300px;
 }
 .user {
   height: auto;
